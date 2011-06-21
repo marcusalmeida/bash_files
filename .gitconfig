@@ -1,0 +1,30 @@
+[user]
+    name = Marcus Almeida
+    email = marcusmage@gmail.com
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+
+[push]
+    default = matching
+
+[core]
+    editor = vim
+    mergetool = meld
+
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+
+[color "diff"]
+    meta = white bold
+    old = red bold
+    new = green bold
+
+[color "status"]
+    added = green bold
+    changed = red bold
+    untracked = yellow bold
