@@ -1,1994 +1,2000 @@
+r g devise:install 
+bundle install 
+r g devise:install 
+@v config/environments/development.rb 
+@v config/routes.rb 
+@v app/views/layouts/application.html.erb 
+git status 
+git add .
+git commit -m 'Commit inicial'
 clear
-vi
+r g devise User
+@v test/fixtures/users.yml 
+git status 
+git commit -am 'Ajustando fixtures'
+r g scaffold project name:string
+r g scaffold status_report project:references user:references yesterday:text today:text status_date:date
+r g migration project_user_join 
+@v db/migrate/20120418010152_project_user_join.rb 
+rake db:migrate 
+rake 
 clear
-more /etc/fstab 
-ls /media/
-ls
-cd /media/
-ls
-cd ..
+git status
+git commit -am 'Adicionando modelos'
 clear
-exit
-dmesg
-dmesg | grep -i "DVD"
-mount /mnt/sr0
-cd /mnt/
-ls
-cd ..
+@v test/functional/status_reports_controller_test.rb 
+rake test 
+rake test:functionals 
+@v app/controllers/status_reports_controller.rb 
+rake test:functionals 
+@v test/unit/status_report_test.rb 
+rake test:functionals 
+@v config/environments/test.rb 
+rake test:functionals 
+@v config/environments/test.rb 
+@v config/environments/development.rb 
+rake test:functionals 
 clear
-exit
-dmesg | grep -i "DVD"
+rake test:functionals 
+@v config/environments/development.rb 
+rake test:functionals
+@v test/functional/status_reports_controller_test.rb 
+@v config/environments/development.rb 
+rake test:functionals
+@v test/functional/status_reports_controller_test.rb 
+rake test:functionals@v  /home/marcus/.rvm/gems/ruby-1.9.3-p125@huddle/gems/activemodel-3.2.3/lib/active_model/mass_assignment_security/sanitizer.rb
+@v  /home/marcus/.rvm/gems/ruby-1.9.3-p125@huddle/gems/activemodel-3.2.3/lib/active_model/mass_assignment_security/sanitizer.rb
+clear
+@v config/environments/development.rb 
+rake test:functionals
+@v test/functional/status_reports_controller_test.rb
+rake test:functionals
+@v test/functional/status_reports_controller_test.rb
+rake test:functionals
+@v test/functional/status_reports_controller_test.rb
+rake test:functionals
+@v test/functional/status_reports_controller_test.rb
+rake test:unit
+rake test:models
+rake test
+@v test/unit/status_report_test.rb
+@v app/controllers/status_reports_controller.rb 
+@v app/models/status_report.rb 
+rake test 
+@v app/models/status_report.rb 
+@v test/unit/status_report_test.rb 
+rake test 
+@v app/models/status_report.rb 
+rake test 
+@v test/unit/status_report_test.rb
+rake test 
+@v test/unit/status_report_test.rb
+rake test:units
+@v app/models/status_report.rb 
+rake test:units
+@v test/unit/status_report_test.rb
+rake test:units
+@v app/controllers/status_reports_controller.rb 
+@v test/functional/status_reports_controller_test.rb 
+@v test/unit/status_report_test.rb
+rake test:units
+@v app/models/status_report.rb 
+rake test:units
+@v app/controllers/application_controller.rb 
+rake test
+@v test/test_helper.rb 
+@v test/functional/projects_controller_test.rb 
+@v test/functional/status_reports_controller_test.rb 
+rake test
+rake test:unit
+rake test:units
+rake test:functionals 
+rake test:units 
+@v test/test_helper.rb 
+rake test:units 
+rake test:functionals
+@v test/test_helper.rb 
+rake test
+@v test/functional/status_reports_controller_test.rb 
+rake test:functionals
+@v app/controllers/status_reports_controller.rb 
+@v app/controllers/application_controller.rb 
+rake test:functionals
+@v test/functional/status_reports_controller_test.rb 
+rake test:functionals
+@v app/controllers/status_reports_controller.rb 
+@v app/controllers/application_controller.rb 
+clear
+rake -T
+gem install rcov 
+gem install simplecov 
+simple-scan 
+rdoc simplecov
 dir
-ls
-sudo reboot
-sudo apt-get install thunar-volman
-cat /etc/fstab 
 clear
-exit
-dmesg | tail 
-dmesg | grep -i "DVD"
-sudo mount /media/cdrom0/ -o unhide
-ls /media
-cd /mei
-sudo ls /media
-sudo su 
-exit
-sudo apt-get install terminator
-cd /var/lib/apt/lists/
-ls
-cd 
-clear
-exit 
-sudo apt-get install git-core git-gui git-doc
-sudo apt-get upgrade 
-sudo apt-get update 
-sudo rm /var/lib/apt/lists/partial/br.archive.ubuntu.com_ubuntu_dists_natty_universe_source_Sources*
-sudo apt-get update 
-cd /bar/lib/apt/lists
-cd /var/lib/apt/lists
-ls
-ls | grep -i 'pt'
-sudo apt-get update 
-sudo gefdit /etc/apt/sources.list
-sudo gedit /etc/apt/sources.list
-ls
-ls | grep -i 'BR'
-la 
-ls -a
-ls -v
-ll
-ll *BR
-clear
-ll *BR
-rm *BR
-sudo rm *BR
-cd 
-sudo apt-get upgrade 
-sudo apt-get install git-core git-gui git-doc
-sudo apt-get install terminator 
-sudo apt-get install gvim 
-sudo apt-get install vim-gnome 
-clear
-cd .vim
-ls
-cp _vimrc ../.vimrc
-cd 
-@v
-vim 
-gvim 
-clear
-ls
-ls -a
-cd .vim
-ls
-@v
-vim
-cd ..
-rm -rf .vim
-vim 
-cler
-clear
-vim
-clear
-exit
-ls
-mkdir repositories
-cd repositories/
-mkdir git 
-cd git
-git clone https://github.com/marcusalmeida/vimfiles.git
-cp vimfiles/ ~/.vim/
-cp -r vimfiles/ ~/.vim/
-sudo apt-get install  vim 
-exit
-sudo apt-get install curl 
-sudo apt-get install ruby-1.9.2 rubygems irb ri rdoc rake
-suod apt-get install sqlite3 libsqlite3-dev
-sudo apt-get install sqlite3 libsqlite3-dev
-How to install Rails 3.0 and Ruby 1.9.2 on Ubuntu
-Published 9/1/2010 7:30 PM by Toran Billups 65 Comments
-When ruby on rails 1.0 was released back in 2005 it was all the rage. And being someone who was often distracted by the next great web framework I decided to have a look. So in early 2006 I built a small application to see what all the hype was about. I immediately saw the value of a strongly opinionated framework, something the average asp.net developer like myself didn’t know much about at the time.
-Fast-forward to August 29th 2010 - Rails 3.0 was released. Just prior to this release I started looking at the web framework again and because I always strive for the optimal developer experience it meant I would need to quit my windows addiction. Not that you can’t do ruby development on windows, but most of the time it’s not worth the pain.
-With that said, I paved my development machine and installed Ubuntu 10.04. But as I started looking around for a "how-to" of sorts on installing rails 3 with ruby 1.9.2 I couldn’t find a simple guide that got me up and running error free. Each time I started with a vanilla install of Ubuntu and ended up with what felt like a "hacked together" development environment. But last night I decided to give it another try and document the steps needed for someone like me coming in with minimal linux experience.
-Install RVM 1.0.1
-First be sure to do a quick update before you get started.
-sudo apt-get update
-sudo apt-get install libruby1.8 zlib1g-dev libssl-dev libreadline5-dev build-essential
-ruby
-sudo apt-get install ruby rubygems irb ri rdoc rake
-sudo pip install virtualenvwrapper
-exit
-cd Envs/
-ls
-pip install django 
-sudo pip install django 
-clear
-@v
-vim 
 dir
-ls -a
-rm .vimrc
-@v
+cd ..
+clear
 dir
-@gvim 
-gvim 
-clear
-git apt-get install easy_install 
-sudo  apt-get install easy_install 
-sudo  apt-get install setuptools
-sudo  apt-get install pip 
-sudo  apt-get install python-pip
-pip
-pip install 
-@v
-ls -a 
-cd repositories/
+cd huddle/
 ls
-cd git 
-ls
-cd vimfiles/
-ls
-cp _vimrc ~/.vimrc
-@v
-ls
-mkdir ~/.vim/
-nautilus
-@v
-gedit .vimrc
-cd
-gedit .vimrc
-ls
-cd .vim 
-ls
-cd ..
-clear
-cd .vim
-l
-more README 
-sudo pip install Pytest 
-@v
-vim _vimrc
-ls
-cd ..
-rm .vimrc 
-clear
-@v
-@gv
-clear
-cd 
-mkdir Envs
 claer
 clear
-ls
-ls -a
-cd .pip
-ls
-cd ..
-clear
-sudo pip install Pyflakes
-dir
-cd repositories/
-cd git
-dir
-cd vim 
-cd vimfiles/
-l
-more README 
-sudo pip install pep8 
-clear
-ls
-cd autoload/
-ls
-more pathogen.vim 
-clar
-clear
-cd 
-mount /dev/sr0
-mount /dev/sr0 /mnt/cdrom/
-sudo /dev/sr0 /mnt/cdrom/
-sudo mount /dev/sr0 /mnt/cdrom/
-sudo mount -t ext2 /dev/sr0 /mnt/cdrom/
-sudo mount -t ext3 /dev/sr0 /mnt/cdrom/
-sudo mount -t ntfs /dev/sr0 /mnt/cdrom/
-sudo mount -t ntfs-3g /dev/sr0 /mnt/cdrom/
-sudo mount -t udf /dev/sr0 /mnt/cdrom/
-sudo mount -t iso9660 /dev/sr0 /mnt/cdrom/
-dir
-s
-ls
-dir
-ls
-cd .local/
-ls
-cd share/
 dir
 cd ..
-ls
-cd ..
-ls
-ls -a
-cd .vim 
-ls
-rm -rf *
-ls
-cp ~/repositories/git/vimfiles/_vimrc .vimrc
-rm .vimrc 
-cp ~/repositories/git/vimfiles/_vimrc ~/.vimrc
-@v
-clar
-clear
-ls
-cd .
-nautilus   ~/repositories/git/vimfiles/
-@v 
-exit
-sudo apt-get install vim-full gvim 
-sudo apt-get install vim-full 
-sudo apt-get install vim
-sudo apt-get install vim 
-vim 
 dir
-ls
-ls -a
-touch .vimrc
-@gv
-touch .gvimrc
+rvm list 
+r --help 
+r n showtime --skip-test-unit 
+r n showtime -T
+r --help 
+caer
 clear
-netstat
-netstat -a
-clear
-dir
-cd repositories/git
-git clone https://github.com/sontek/dotfiles.git
-cd dotfiles/
-s
-ls
-cp -r _fonts/ ~/.fonts
-cp _dir_colors ~/.dir_colors
-cp _gitconfig ~/.gitconfig
-cp _inputrc ~/.inputrc
-cp _pdbrc ~/.pdbrc
-cp _pdbrc.py ~/.pdbrc.py 
-cp _pythonrc.py ~/.pythonrc.py 
-cd 
-@gv .gitconfig 
-sudo apt-get install meld 
-meld
-@v
-sudo apt-get uninstall vim-gnome
-sudo apt-get remove vim-gnome
-sudo apt-get remove vim
-clear
-@v
-ls .vimrc
-ls .vim
-vim 
-vi
-sudo apt-get install vim-gtk
-gvim 
-clar
-sudo apt-get remove vim-gtk 
-sudo apt-get remove vim-gnome
-gvimtutor 
-gvim
-clear
-rm .vimrc
-ls
-gvim 
-vim
-sudo apt-get install gvim 
-sudo apt-get install vim-gnome
-sudo apt-get install vim
-gvim 
-@gv
-@pa
-dir
-ls
-ls -a
-vi .bash_aliases 
-@pm
-clear
-ls
-cd .vim
-ls
-cd ..
-cd repositories/git/vimfiles/
-s
-ls
-cp _vimrc ~/.vimrc
-cd 
-gvim .vimrc
-clear
-@v .vimrc
-@v test.py 
-exit
-python 
-nautilus .
-gksudo nautilus . 
-clear
-ps -aux
-clear
-exit
-cd Downloads/
-ls
-tar zxfv mox-0.5.3.tar.gz 
-cd mox-0.5.3/
-ls
-python setup.py install 
-suod python setup.py install 
-sudo python setup.py install 
-cd ..
-rm -rf mox-0.5.3
-clear
-cd ..
-exit
-python 
-ipython
-sudo apt-get install ipython 
-ipythonx
-ipython-wx
-ipython
-clear
-exit
-clear
-cd  repositories/hg/
-hg clone https://continuous-test.googlecode.com/hg/ continuous-test
-cd continuous-test
-ls
-cd tests/
-ls
-more fixtures/
-ls
-cd fixtures/
-ls
-cd sub/
-ls
-cd ..
-clear
-ls
-cd contest/
-ls
-more sound.py 
-cd ..
-dir
-ls
-cd tests/
-l
-ls
-more test_mock.py 
-cd ..
-clear
-cd ..
-clear
-exit
-@v .vimrc
-cd repositories/
-cd git
-cd dotfiles/
-ls
-@v _vim
-@v _vimrc 
-cd ..
-cd .
-cd 
-cler
-clear
-dir
-ls -a
-sl .fonts/
-ls .fonts
-t
-exit
-sudo apt-get install ack-grep
-ack-grep 
-cd 
-@v .vimrc
-cp .vimrc ~/repositories/git/vimfiles/_vimrc 
-cd repositories/git/vimfiles/
-git status
+r n showtime --skip-test-unit
+rails new showtime --skip-test-unit 
+cd showtime
+@v Gemfile
+bundle install 
+r g rspec:install
+@v Gemfile
+r g rspec:install
+@v Gemfile
+r g cucumber:install 
+@v Gemfile
+r g cucumber:install 
+rake db:migrate 
+rake db:test:prepare
+rake spec 
+rake cucumber
+@v Gemfile
+bundle install 
+rake cucumber
+@v features/sowtime_description.feature
+rake cucumber:wip 
+@v features/step_definitions/showtime_steps.rb
+rake cucumber:wip 
+@v features/step_definitions/showtime_steps.rb
+rake cucumber:wip 
+r g model movie showtime_date:date showtime_time:time 
+rake db:migrate 
+rake db:test:prepare 
+@v app/models/movie.rb 
+rake cucumber:wip 
+@v app/models/movie.rb 
+rake cucumber:wip 
+mv features/sowtime_description.feature features/showtime_description.feature 
+rake cucumber:wip 
+rake cucumber
+@v features/showtime_description.feature
+rake cucumber
+git init 
+git status 
+git commit -am 'Commit inicial'
 git add .
-git commit -m 'settings for ack.vim plugins'
-git pull 
-git pushh
-git push
-git push origin master
-exit
-@v .vimrc
+git commit -m 'Commit inicial'
 clear
-cd .vim
-ls
-cd bundle/
-ls
-cd ack/
-ls
-more READ
-more README.md 
-exit
-sudo apt-get install getlibs-all
-sudo apt-get install getlibs
-sudo dpkg =i getlibs-all.deb
-exit
-cd .config/
-ls
-cd tem
-cd terminator/
-ls
-@v config 
-exit
-ks
-clear
-exit
+di
 dir
+clear
 ls
+cd features/
+ls
+@v create_movie.feature
+d ..
+cd ..
+rake cucumber 
+r g model genre name:string 
+rake db:migrate && rake db:test:prepare 
+@v features/step_definitions/genre_steps.rb
+rake cucumber 
+ls
+@v features/step_definitions/genre_steps.rb
+@v features/step_definitions/movie_steps.rb
+rake cucumber 
+r g migrate AddTitleAndReleaseYearToMovie title:string release_year:integer
+r g migration AddTitleAndReleaseYearToMovie title:string release_year:integer
+rake db:migrate 
+r g controller movie index new create
+rake cucumber 
+r g controller movies index new create
+rake routes 
+rake cucumber 
+r s 
+r c
+bundle install 
+ciear
+
+rake routes
+rake cucumber 
+r s
+rake cucumber 
+r s
+rake cucumber 
+r g migration CreateGenresMovies genre_id:integer movie_id:integer
+rake db:migrate && rake db:test:prepare
+r g controller genres index show 
+rake cucumber 
+rake routes
+rake cucumber
+rake db:migrate 
 clear
-sudo apt-get google-chrome
-sudo apt-get install google-chrome
-cd vim
-cd repositories/git/vimfiles/
-@v _vimrc 
-git branch
-git status
-git commit -m "removing log messages"
-git add _vimrc
-git commit -m "removing log messages"
-git pull 
-git push
+rake db:migrate --help 
+rake db:rollback STEP=2
+rake db:rollback 
+rake db:migrate && rake db:test:prepare
+rake cucumber 
+r s
+r c 
+r s
 clear
+dir
+clear
+r s
+rake cucumber 
+git statys
+git status 
+git add 
+git add .
+git commit -m 'Adcionando features e steps para o cucumber'
+clear
+dir
+rake db:rollback 
+rake dd:migrate && rake db:test:prepare 
+rake dbn:migrate && rake db:test:prepare 
+rake db:migrate && rake db:test:prepare 
+rake cucumber 
+r s 
+r c 
+rake cucumber 
+clear
+cd
+dir
+cd sandbox/
+dir
+cd python/
+dir
+cd django1.4/
+dir
+cd env/
+cd lib/python2.7/site-packages/django/
+@v
+@v django.contrib.admin.views.main.ChangeList
+ll
+@v contrib/admin/views/main.py
+dir
 cd 
-sudo pip pudb 
-sudo pip install pudb
-sudo apt-get install python-pudb
-@v test.py 
-python -m pudb.run test.py 
+cd sandbox/python/django
+dir
+cd blog/
+dir
+cd ..
+ls
+cd ..
+cd django1.4
+dir
+cd mysite/
+dir
+cd polls
+dir
+@v admin.py 
+ls
+cd ..
+@pm runserver 
+ls
+cd ..
+ls
+source env/bin/activate
+cd mysite/
+dir
+@pm runserver 
+ls
+cd polls/
+dir
+@v admin.py
+cd ..
+source env/bin/activate
+cd mysite/
+@pm runserver
+@v features/step_definitions/movie_steps.rb 
+@v db/migrate/20120428141232_create_genres_movies.rb 
+@v app/views/movies/index.html.erb 
+@v .
+cd ..
+cd blog/
+dir
+cd app/models/
+dir
+@v post.rb 
+dir
+cd repositorios/
+dir
+d ..
+cd ..
+rvm list
+dir
+cd sandbox/
+dir
+cd ..
+sudo apt-get install terminator 
+hdparm -W1 /dev/sda
+sudo su 
+sudo vim /etc/fstab
+sudo vi /etc/fstab
+sudo apt-get install terminator
+exit
+apt-get install gvim 
+apt-get install vim
+sudo apt-get install vim
+sudo apt-get install aptitude
+gvim 
+sudo apt-get vim-gnome 
+sudo apt-get install vim-gnome 
+gvim 
+@v .
 clear
-@v test.py 
-py.test test.py
+sudo su 
+sudo apt-get update 
+sudo apt-get upgrade 
+dir
+clear
+sudo vim /etc/fstab
+sudo vim /etc/rc.local 
+sudo vim /etc/sysctl.conf 
+sudo vim /etc/rc.local 
+sudo vim /etc/fsatb
+sudo vim /etc/fstab
+sudo vim /etc/rc.local
+sudo vim /etc/sysctl.conf 
+sudo su 
+dmesg 
+clear
+cat /sys/block/sda/queue/scheduler
+sudo vim /etc/rc.local 
+ls /boot/
+ls /boot/grub
+ls /boot/grub/*lst
+@v /etc/default/grub 
+sudo vim /etc/default/grub 
+sudo hdparm -t /dev/sda
+sudo hdparm -t --direct /dev/sda
+sudo vim /etc/fstab
+exit
+htop
+sudo apt-get install htop 
+htop 
+clear
+sudo apt-get install gnome-tweak-tool 
+gnome-tweak-tool 
+clear
+dir
+clear
+dir
+cd sandbox/
+cd daj
+cd python/
+dir
+cd django
+cd ..
+cd django1.4/
+dir
+cd vn
+cd env/
+cd ..
+source env/bin/activate
+cd mysite/
+dir
+@pm runserver 
+pip install django --upgrade 
 python 
-@v test.py 
-py.test test.py
-sudo pip install pabric 
-sudo pip install fabric
-@v fabfile.py
-fab hello 
-rm fabfile.py*
-clear
 dir
-ls
-rm *.pyc
+sudo apt-get install python-pip 
 clear
-dir
-ls
-cd repositories/
-dir
-cd git
-dir
-cls
-clear
-dir
-clear
-ls
-cd ..
-clear
+deactivate 
 dir
 cd ..
-clear
-dir
+source env/bin/activate
+pip install django --upgrade
+deactivate 
 ls
-@v test.py 
+rm -rf env/
+sudo apt-get install virtualenv 
+pip install virtualenv
+sudo pip install virtualenv
+virtualenv env --no-site-packages 
+cd env/
+dir
+cd ..
+source env/bin/activate
+pip install django 
+cd mysite/
+@pm runserver 
+cllear
 clear
-@v t.c
-gcc t.c -oteste
-./teste 
-rm teste
-tm t.c 
-rm t.c 
+deactivate 
+dir
+cd ..
+cd mysq
+cd mysite/
+cllear
+htop 
+dir
+mv NETCLOCK.pdf Documentos/
+ls
+cd Imagens/
+ls
+cd ..
+sudo apt-get autoremove usplash
+sudo apt-get install splashy-themes
+sudo apt-add-repository ppa:diesh/testing
+sudo apt-get install classicmenu-indicator 
+exit
+cd ..
+cd
+cd repositorios/
+cd git/
+cd Anuncie/
+git pull 
+sudo apt-get install git git-cola
+git pull 
+cd anuncie/produtos/
+@v utils.py 
+exit
+cd ..
+cd
+repositorios/
+dir
+cd repositorios/
+cd git/
+dir
+cd Globo-Promocoes/
+ls
+more urls.py 
+more urls_admin.py 
+cd promocoes/
 clear
-mkdir snadbox 
-rm snadbox/
-rm -rfsnadbox/
-rm -rf snadbox/
+more urls.py
+more views.py
+ll
+more urls.py
+cd ..
+more urls.py 
+firefox index.html 
+exit
+firefox index.html 
+exit
+dir
+cd jquery.mobile-1.1.0/
+dir
+cd demos/
+dir
+firefox index.html 
+cd ,,
+cd ..
+ls
 mkdir sandbox 
 cd sandbox/
-@da startproject project
-cd project/
-@da startapp mysite
-@gv .
-cd  mysite/
-@gv .
-cd ..
-@pm sql 
-@pm sql mysite/
-@pm sql mysite
-@pm syncdb
-@pm runserver
-clear
-sudo pip install pymox
-sudo pip install pymock
-clear
-cd ..
-clear
-python 
-clear
-dir
-ls
-@v test.py
-py.test test.py
-@v teste.py
-@v test.py
-py.test test.py
-@v test.py
-py.test test.py
-waiter
-clar
-dir
-ls
-cd repositories/
-dir
-cd git
-dir
-ls
-cd dot
-cd vimfiles/
-ls
-git status
-git branch
-cd ..
-dir
-cd dotfiles/
-git status
-git branch
-cd ..
-d
-cd 
-clear
-cd sandbox/project/mysite/
-@v tests.py
-cd ..
-dir
-cd tdd
-ls
-cd test/
-ls
-dir
-@v 
-@v test_calculator.py
-@v calculator.py 
-@v test_calculator.py
-grep calculator *.py
-ack-grep calculator
-ls
-rm *.pyc
-ls
-ack-grep -i Calculator
-@v .
-cd 
-@v .vimrc
-clear
-cd pro
-ls
-cd sandbox/project/
-@v .
-clear
-sudo pip install -U mock 
-clear
-ack-grep -i settings ./
-ack-grep -i settings ./ --column
-ack-grep -i -H  settings ./ --column
-clear
-ack-grep -i MEDIA ./ 
-ack-grep -i MEDIA 
-ack-grep -i MEDIA *.py
-ack-grep -i views *.py
-ack-grep -i views *.py ./
-ack-grep -i views *.py 
-clear
-ack-grep -i views *.py 
-ack-grep -i views *.py ./
-ack-grep -i -H views *.py ./
-clear
-cd 
-s
-ls -a
+@v index.html
 exit
-sudo apt-get install mercurial 
-@v .hgrc
-cp ~/repositories/git/dotfiles/_hgrc ~/.hgrc
-@v .hgrc
-cd repositories/hg
-cd repositories/
-mkdir hg 
-cd hg
-clear
-hg clone http://continuous-test.googlecode.com/hg/ continuous-test-read-only
-ls
-cd continuous-test-read-only/
-python setup.py install 
-sudo python setup.py install 
-clear
-cd ..
-python -m contest.main
-dir
-mv test.py test_person.py 
-rm test.pyc
-python -m contest.main
-dir
-cd sandbox/
-dir
-cd project/
-ls
-cd mysite/
-python -m contest.main
-cd ..
-mkdir tdd
-cd tdd/
-mkdir test
-python -m contest.main
-clear
-python -m contest.main
-cd ..
-ls
-cd project/
-ls
-cd mysite/
-ls
-dir
-lls
-@pm runserver 
-cd ..
-@pm runserver 
-clear
-cd..
-clear
-dir
-cd ..
-ls
-clear
-exit
-mkdir bitchx
-cd bitchx/
-wget http://www.bitchx.com/download/BitchX-1.1-final-linux.tar.gz
-tar -zxfv BitchX-1.1-final-linux.tar.gz 
-ks
-tar 
-tar zxfv BitchX-1.1-final-linux.tar.gz 
-./BitchX 
-clear
-sudo apt-get install tcllib
-sudo ln -s BitchX /usr/bin/BitchX
-cd 
-cd bin
-cd bitchx/
-ls -s /usr/bin/BitchX ./BitchX
-sudo ls -s /usr/bin/BitchX ./BitchX
-sudo ln -s /usr/bin/BitchX ./BitchX
-ls
-./BitchX 
-clear
-cd 
-dir
-ls
-cd bitchx/
-sudo rm -s /usr/bin/BitchX 
-sudo rm  /usr/bin/BitchX 
-sudo ln -s BitchX /usr/bin/Bitchx
-cd 
-sudo chmod +x /usr/bin/BitchX
-quit
-exit
-py.test
-py.test --version 
-cd ..
-clear
-cd
-cd sandbox/
-dir
-@v sample_test.py
-py.test sample_test.py 
-quit 
-exit
-bitchx/BitchX 
-clear
-exit
-cd Downloads/
-ls
-chmod +x VMware-Player-3.1.4-385536.x86_64.bundle 
-./VMware-Player-3.1.4-385536.x86_64.bundle 
-gksudo ./VMware-Player-3.1.4-385536.x86_64.bundle 
-translate  pt-BR en 
-translate 
-cd sandbox/
-./translate.py en pt-BR
-clear
-translate en pt-BR
-translate 
-@v translate.py 
-cd ..
-cd repositories/git/vim
-cd repositories/git/vimfiles/
-ls
-git pull origin master 
-cd bundle/snipmate/snippets/python/
-@v encoding.snippet 
-@v bang.snippet 
-cd ..
-git status
-clear
-dir
-cd 
-cd -
-cd 
-cd - 
-cd -
-ls
-md5sum protocolo_alteracao_valocidade_velox 
-cd Downloads/
-ls
-md5sum adobeair.deb 
-clear
-cd 
-vmware-gksu
-gksudo vmware
-gksudo vmware-installer
-gksudo vmplayer
-more /tmp/vmware-root/setup-2364.log
-sudo more /tmp/vmware-root/setup-2364.log
-sudo more /tmp/vmware-marcus/appLoader-2009.log 
-clear
-cd /tmp/vmware-marcus/
-ls
-rm *
-ls
-rm *
-ls
-more appLoader-3338.log 
-tail appLoader-3338.log 
-ls
-tail unity-helper-3338.log 
-tail unity-helper-ipc-\:0.0 
-rm *
-ls
-cd ..
-ls
-cd virtual-marcus.5d3FVn/
-ls
-cd ..
-cd vmware-marcus/
-ls
-cd ..
-cd VMwareDnD/
-ls
-cd ..
-cd
-ps aux
-killall -9 vmware
-killall -9 vmware*
-top 
-ps aux | ack-grep 'vmware'
-kill -9 853
-sudo su
-ps aux | ack-grep 'vmware'
-clear
-ls
-sudo su 
-exit
-cd Downloads/
-ls
-mkdir ~/.vim/plugin/
-cp ScrollColor.vim ~/.vim/plugin/
-@v
-cd
-@v .vimrc
-@v .vimrc 
-ls
-cd sandbox/
-ls
-@v outro.py 
-rm -rf ~/.vim/colors/
-rm -rf ~/.vim/plugin/
-@v ~/.vimrc
-clear
-exitt
-exit
-cd repositories/
-cd git
-ls
-git clone https://github.com/vim-scripts/Color-Sampler-Pack.git
-dir
-cd Color-Sampler-Pack/
-ls
-more README 
-ls
-cp -R colors/ ~/.vim/
-cp -R plugin/ ~/.vim/
-exit
-ssh 10.0.0.102
-ping 10.0.0.102
-rlogin 10.0.0.102
-exit
-translate en pt-BR
-clear
-exit
-translate en pt-BR
-clear
-exit
-translate en pt-BR
-ipython 
-python 
-ipython
-exit
-ipython 
-exit
-sudo nautilus
-exit
-sudo apt-get install cups-pdf
-exit
-sudo chmod s /usr/lib/cups//backend/cups-pdf 
-clear
-ls
-exit
-ls
-cd /
-ls
-cd var
-ls
-cd spool/
-ls
-cd cups-pdf/
-ls
-cd SPOOL/
-ls
-cd ..
-cd
-ls
-cd PDF
-ls
-rm *pdf
-ls
-cd ..
-cear
-clear
-exit
-sudo apt-get install xchm
-clear
-exit
-python 
-clear
-exit
-cd bitchx/
-./BitchX irc.freenode.net 6665 -n red5 
-clear
-cd 
-cd rerpo
-cd repositories/git/guide-to-testing-in-django/
-cd ls
-ls
-cd posl
-cd polls/
-ls
-cd tests/
-ls
-@v __init__.py
-ls
-more models.py
-clear
-exit
-cd bitchx/
-./BitchX 
-./BitchX irc.freenode.net 6665 -n red5
-clear
-cd ..
-cd Envs
-dir
-mkvirtualenv --help
-mkvirtualenv --not-site-package OAS
-mkvirtualenv --no-site-package OAS
-cd OAS/
-ls
-cd oas-reporting/
-pip -r requirements.txt 
-pip install -r requirements.txt 
-clear
-@v 
-@v .
-clear
-cd ..
-l
-dir
-ls
-more hook.log
-more hook.log.1
-cd ..
-ls
-cd Envs/
-cd
-cd sandbox/
-dir
-ls
-@v .
-more sample_test.py
-more test_person.py
-ls
-cd por
-cd project/
-ls
-cd mysite/
-ls
-mkdir tests 
-cd tests/
-touch __init__.py 
-cd ..
-ls
-mv tests.py ./tests/
-ls
-@pm test
-cd ..
-@pm test
-ls
-cd mysite/
-l
-ls
-@pm
-cd ..
-@pm
-deactivate 
 @pm 
-@pm test
-cd mysite/tests/
 ls
-@v tests.py 
+cd fixtures/
+dir
+@pm 
+@p 
+exit
+@p 
+cd fixtures/
+ls
+@p
+exit
 cd ..
+ls
+cd vn
+cd env/
+dir
+cd lib/python2.7/site-packages/django
+ls
+cd db/
+dir
+cd models/
+ls
+@v manager.py
+exit
+cd ..
+cd env/lib/python2.7/site-packages/django/db/models
+ls
+@v manager.py
+exit
+cd
+cd repositorios/git/Anuncie/
+ls
+git status 
+git pull 
+git add anuncie/audiencia/
+git commit -m 'Adicionando a app de audiencia'
+git rm anuncie/audiencia/fixtures/files/.~lock.audiencia_produtos.csv#
+git status 
+git commit -m 'Removendo arquivo desnecessario'
+git status 
+git push 
+exit
+ls
+cd ..
+ls
+cd ..
+ls
+source env/bin/activate 
+cd anuncie/
+dir
+alias
+pip install rednose 
+pip install pudb 
+sudo apt-get install python-2.7-dev 
+python -v
+sudo apt-get install python-2.7.3-dev 
+sudo aptitude search python-2.7-dev 
+sudo aptitude search python-2.7
+sudo aptitude search python
+sudo aptitude install python27-dev
+sudo apt-get install python2.7-dev
+pip install pudb 
+clear
+alias 
+@ctd
+tdaemon --test-program=django --custom-args="--verbosity=2 --force-color"'
+'
 @pm test 
-@pm test mysite/tests
-@pm test mysite.tests
-@pm test mysite.tests.tests
-ls mysite/tests/tests.py 
-more mysite/tests/tests.py 
-@pm test mysite.tests.tests.SimpleTest
-@pm test mysite.tests.SimpleTest
-@pm test mysite.tests.tests.SimpleTest
-ls
-cd mysite/
-ls
-cd tests/
-ls
-more __init__.py
-ls
-echo "from tests import *" >> __init__.py
-cd ..
-@pm test
-cd mysite/
-cd tests/
-ls
-@v __init__.py
-ls
-@v tests.py
-cd ..
-@pm test
-cd mysite/
-ls
-cd tests/
-dir
-rm *pyc
-ls
-@v tests.py 
-ls
-@v __init__.py 
-cd ..
-@pm test
-cd mysite/
-cd tests/
-ls
-mv tests.py test_simple.py
-@v __init__.py
-cd ..
-@pm test
-@v mysite/tests/__init__.py
-@pm test
-ls mysite/tests/test_simple
-@pm test
-@v mysite/tests/__init__.py
-@pm test
-@v mysite/tests/__init__.py
-@pm test
-@v mysite/tests/__init__.py
-@pm test
-cd mu
-cd mysite/
-ls
-cd tests/
-ls
-rm tests.pyc 
-@v __init__.py
-cd ..
-@pm test
-@v mysite/tests/__init__.py
-@pm test
-cd mysite/
-ls
-@v views.py 
-@v tests.py
-gedit tests.py
-cd ..
-cd project/
-@pm tests
-@pm test
-@v mysite/tests/__init__.py
-@v test
-ls
-@pm test
-cd mysite/tests/
-ls
-@v __init__.py
-cd ..
-@pm test
-cd mysite/
-ls
-rm tests.py 
-ls
-cd ..
-@pm test
-cd mysite/tests/
-ls
-@v __init__.py
-cd ..
-@pm test
-cd ..
-cd repositories/
-cd git/
-ls
-git clone https://github.com/toastdriven/guide-to-testing-in-django.git
-cd guide-to-testing-in-django/
-ls
-cd polls/
-ls
-more __init__.py 
-cd tests/
-ls
-more __init__.py 
-cd ..
-@pm test
-ls
-more README.rst 
-more settings.py
-ls
-cd ..
-cd .
-cd ..
-ls
-cd sandbox/
-dir
-cd project/
-ls
-cd mysite/
-ls
-cd tests/
-ls
-@v __init__.py
-cd ..
-cd .
-cd ..
-@pm test
-dir
-ls
-cd mysite/
-ls
-cd tests/
-ls
-rm *pyc
-ls
-mv test_simple.py simple.py 
-@v __init__.py 
-cd ..
-@pm test
-cd mysite/tests/
-ls
-@v simple.py
-cd ..
-@pm test
-cd ..
-cd project/
-ls
-rm -rf mysite/
-@da startapp mysite
-cd mysite/
-ls
-mkdir tests
-cd tests/
-touch __init__.py
-cd ..
-mv tests.py ./tests/
-cd tests/
-ls
-mv tests.py example.py 
-@v __init__.py 
-@v example.py 
-cd ..
-@pm test
-@pm test mysite.tests.example
-@pm test mysite.tests.example.SimpleTest
-clear
-exit
-@v modulo_relatorio.py 
-mv modulo_relatorio.py /media/DIS
-sudo cp modulo_relatorio.py /media/DISK_IMG/projetos/oas-reporting/
-exit
-python 
-ipython 
-cd sandbox/
-ipython 
-clear
-ipython 
-exit
-cd /media/DISK_IMG/projetos/oas-reporting/
-ls
-@v . 
-exit
-sudo apt-get install libgnomevfs2-extra
-exit
-sudo smbpasswd -a marcus
-host
-HOSTNAME
-echo $HOSTNAME
-sudo smbpasswd -e marcus
-cd /etc/
-cd samba/
-ls
-@v smb.conf 
-cd 
-ls -a 
-sudo smbpasswd -a marcus
-sudo smbpasswd -e marcus
-clear
-pint 10.0.0.105
-ping 10.0.0.105
-clear
-exit
-sudo sudo apt-get install lib32asound2 lib32gcc1 lib32ncurses5 lib32stdc++6 lib32z1 libc6 libc6-i386 lib32nss-mdns
-sudo getlibs -l libnss3.so.1d libnssutil3.so.1d libsmime3.so.1d libssl3.so.1d libnspr4.so.0d libplc4.so.0d libplds4.so.0d libgnome-keyring.so libgnome-keyring.so.0 libgnome-keyring.so.0.1.1
-sudo apt-get install getlibs
-sudo getlibs -l libnss3.so.1d libnssutil3.so.1d libsmime3.so.1d libssl3.so.1d libnspr4.so.0d libplc4.so.0d libplds4.so.0d libgnome-keyring.so libgnome-keyring.so.0 libgnome-keyring.so.0.1.1
-sudo getlibs libadobecertstore.so
-exit
-sudo add-apt-repository "deb http://archive.canonical.com/ubuntu natty partner
-sudo add-apt-repository "deb http://archive.canonical.com/ubuntu natty partner"
-sudo apt-get update 
-sudo add-apt-repository "deb http://archive.canonical.com/ubuntu natty partner"
-sudo apt-get update 
-cd Downloads/
-ls
-rm adobeair_2.6.0.19140-0natty1_i386.deb 
-ls
-clear
-ls
-java -version 
-cd 
-ls
-@v Teste.java
-javac Teste.java 
-rm Teste.java 
-clear
-mkdir tmp 
-cp Downloads/adobeair.deb ./tmp/
-cd tmp/
-l
-dpkg-deb -x adobeair.deb 
-dpkg-deb -x adobeair.deb .
-ls
-rm -rf *
-cd ../Downloads/
-dpkg-deb -x adobeair.deb ../tmp/
-dpkg-deb --control adobeair.deb ../tmp/DEBIAN
-sed -i 
-sed -i "s/i386/all" ../tmp/DEBIAN/control
-dpkg -b ../tmp adobeair_64.deb
-ls
-rm -rf ../tmp
-sudo dpkg -i adobeair_64.deb 
-rm adobeair_64.deb 
-mkdir tmp 
-dpkg-deb -x adobeair.deb tmp 
-dpkg-deb --control adobeair.deb tmp/DEBIAN 
-cd tmp/
-cd DEBIAN/
-ls
-ack-grep "s/i386/all/" 
-ack-grep "s/i386/all/" *
-ack-grep "i386" *
-@v control 
-ack-grep "i386" *
-cd ..
-ack-grep "i386" *
-cd ..
-dpkg -b tmp adobeair_64.deb
-ls
-sudo dpkg -i adobeair_64.deb 
-cd ..
-cd Documentos/
-ls
-exit
-rlogin 10.0.0.106
-ping 10.0.0.106
-scp 10.0.0.106
-ssh 10.0.0.106
-rlogin 10.0.0.106
-clear
-exit
-dir
-cd Dowo
-cd Downloads/
-ls
-rm -rf ubuntu-11.04-server-i386.iso 
-clear
-exirt
-exit
-dir
-cd bitchx/
-./BitchX irc.freenode.net 6665 -n marcusalmeida
-cd 
-exit
-sudo su 
-exit
-rlogin marcus@10.0.0.106
-clear
-exit
-cd sandbox/
-ls
-mkdir fab_project
-cd fab_project/
-@v fabfile.py
-fab -l
-fab clean deploy 
-@v fabfile.py
-fab -l
-@v fabfile.py
-fab -l
-@v fabfile.py
-fab -l
-fab prepare
-ls
-fab clean
-
-fab prepare
-ls
-fab -l
-fab build
-cd ..
-ls
-cd project/
-ls
-rm -rf *.pyc
-ls
-@v fabfile.py 
-fab -l
-fab pack 
-ls
-cd /tmp/
-ls
-rm my_project.tgz
-cler
-cd -
-clear
-ls
-cd ..
-ls
-@v fabfile.py
-fab -l 
-fab deploy 
-@v fabfile.py
-fab -l
-fab deploy 
-ping ubuntu-server
-ping 10.0.0.106
-clear
-exit
-python 
-exit
-sudo apt-get install mplayer
-mplayer 
-cd Downloads/
-ls
-cd X-Men\ First\ Class\ 2011\ Hindi\ 720P\ BRRip\ x264\ E\ SuB\ xRG/
-mplayer X-Men\ First\ Class\ 2011\ Hindi\ 720P\ BRRip\ x264\ E\ SuB\ xRG.avi 
-cd ..
-rm -rf X-Men\ First\ Class\ 2011\ Hindi\ 720P\ BRRip\ x264\ E\ SuB\ xRG/*
-ls
-nautilus . 
-cd ..
-clear
-exit
-sudo su 
-exit
-sudo ifconfig
-exit
-cd sandbox/
-dir
-ls
-mkdir prj_shouth
-cd prj_shouth/
-ls
-sudo easy_install South
-ls
-@da startproject project
-@cd project/
-s
-ls
-cd project/
-ls
-clear
-@da startapp
-@da startapp blog
-@v settings.py 
-rm -rf blog
-clear
-@pm startapp shouthtut
-cd ..
-rm -rf 
-rm -rf project/
-@da startproject project 
-cd project/
-@v settings.py 
-@da startapp shouthtut
-@v settings.py 
-@v .
-@v settings.py 
-@pm syncdb 
-@pm shell
-@v settings.py 
-@pm shell
-@v settings.py 
-@pm shell
-@v settings.py
-@pm shell
-clear
-@pm syncdb
-ls
-cd shouthtut/
-ls
-cd ..
-@pm migrate 
-@pm schemamigration --initial shouthtut
-ls
-la
-ls -a
-cd shouthtut/
-lsl
-ls
-cd migrations/
-ls
-more 0001_initial.py 
-cd ..
-@pm migratie shouthtut
-@pm migrate shouthtut
-ls
-cd ..
-ls
-rm database.db 
-cd project/
-ls
-@pm migrate shouthtut
-@pm syncdb 
-@pm migrate shouthtut
-@v .
-@pm schemamigration shouthtut --auto
-@pm migrate shouthtut
-@v shouthtut/models.py
-@pm schemamigration shouthtut --auto
-@pm migrate shouthtut
-@v shouthtut/models.py
-@pm schemamigration shouthtut --auto
-@pm migrate shouthtut
-@pm migrate --list 
-@pm migrate --list | grep -v "*"
-man grep 
-clear
-@pm startapp southtut2
-@v settings.py
-@v southtut2/models.py 
-@pm schemamigration --initial southtut2 
-@pm migrate southtut2
-@pm shell
-@v southtut2/models.py 
-@pm schemamigration  southtut2 --auto
-@pm migrate southtut2
-@pm datamigration southtut2 hash_password
-@v southtut2/migrations/0003_hash_password.py 
-@pm schemamigration  southtut2 --auto
-@pm schemamigration 
-@pm migrate 
-ls
-cd southtut2/
-ls
-cd migrations/
-ls
-cd ..
-rm -rf southtut2
-ls
-cd ..
-ls
-rm database.db 
-ls
-cd project/
-@pm syncdb 
-@pm startapp southtut2
-@pm syncdb 
-@pm migrate shouthtut/
-@pm migrate shouthtut
-@v southtut2/models.py
-@pm schemamigration --initial southtut2
-@pm migrate southtut2
-@pm shell
-@v southtut2/models.py
-@pm schemamigration southtut2 --auto 
-@pm datamigration southtut2 hash_passwords 
-@v southtut2/migrations/0003_hash_passwords.py 
-@pm schemamigration southtut2 --auto 
-@pm migrate southtut2
+tdaemon --test-program=django 
+@pm test audiencia/tests
+@pm test audiencia
+@pm test audiencia -v 2
+@ip 
+@p 
 @pm shell 
-@v southtut2
-@pm migrate 0001
-@pm migrate southtut2 0001
-@pm migrate southtut2 0002
-@pm migrate southtut2 0003
-@pm migrate southtut2 0001
-@pm migrate southtut2 
-@pm graphmigrations | dot -Tpng -omigrations.png
-sudo apt-get graphviz
-sudo apt-get install  graphviz
-@pm graphmigrations | dot -Tpng -omigrations.png
-nautilus .
-claer
+@pm test audiencia -v 2
+@pm test audiencia -v 2 --rednose
+@pm test audiencia -v 2 
+rm audiencia/tests/tests.pyc 
+@pm test audiencia -v 2 
+@pm shell 
+@pm test audiencia -v 2 
+@p
+@pm test audiencia -v 2 
+gedit &
+@pm test audiencia -v 2 
+gedit 
+@pm test audiencia -v 2 
+@pm shell 
 clear
-cd
-cd repositories/hg/
-hg clone https://bitbucket.org/andrewgodwin/south
-cd south/
+@pm syncdb 
+clear
 ls
-more clean.sh 
-more README
-@v south
-cd
-cd -
+rm anunciedb 
+@pm sysncbd 
+@pm syncdb
+@pm sql audiencia
+rm anunciedb 
+@pm sql audiencia
+@pm syncdb 
+@pm shel 
+@pm shel l
+@pm shell
+@pm sql audiencia
+@pm shell 
+rm anunciedb 
+ls
+@pm syncdb 
+@pm shell 
+@pm test 
+@pm test audiencia.tests
+@pm test audiencia
+@pm test audiencia -v 2
+@pm shell 
+@pm test audiencia -v 2
+@pm shell 
+@pm sql audiencia
+@pm test audiencia -v 2
+@p
+@pm test audiencia -v 2
+@pm shell 
+@pm test audiencia -v 2
+@pm test audiencia -v 2 --failfast
+@v /home/marcus/sandbox/python/django1.4/env/local/lib/python2.7/site-packages/django/db/backends/util.py
+@v /usr/lib/python2.7/decimal.py
+@v /home/marcus/sandbox/python/django1.4/env/local/lib/python2.7/site-packages/django/db/backends/util.py
+@pm test audiencia -v 2 --failfast
+@v /home/marcus/sandbox/python/django1.4/env/local/lib/python2.7/site-packages/django/db/backends/util.py
+clear
+@pm test audiencia -v 2 --failfast
+@pm shell 
+@pm test audiencia -v 2 --failfast
+pip install simplejson 
+@pm test audiencia -v 2 --failfast
+@pm test audiencia.tests.AudienciaTestCase -v 2 --failfast
+@pm test audiencia.tests.models.AudienciaTestCase -v 2 --failfast
+@pm test audiencia.tests.models -v 2 --failfast
+@pm test audiencia -v 2 --failfast
+@pm shell 
+@pm test audiencia -v 2 --failfast
+@pm 
+@pm shell 
+@pm syncdb 
+@pm shell 
+rm anunciedb 
+@pm syncdb 
+@pm shell 
+clear
+@pm shell 
+@pm test audiencia -v 2 --failfast
+@p
+@pm test audiencia -v 2 --failfast
+open . &
+exit
+dir
+cd /mnt/
+dir
+ls media
 cd ..
+dir
+cd /media/409be2ef-9dd0-441d-aa40-a353f37e290c/marcus/Público
+ls
+cd env
+cd ..
+source env/bin/activate
+ls
+cd env/
+dir
+source env/bin/activate 
+ls
+cd env/
+dir
+cd ..
+dir
+ls
+ls -r env/
+virtualenv env --no-site-packages
+source env/bin/activate 
+cd ..
+ls
+clear
+ls
+cd And
+cd Anuncie/
+dir
+cd anuncie/
+@pm runserver 
+ls
+cd produtos
+dir
+cd ..
+cd
+cd repositorios/
+dir
+cd git 
+dir
+cd Anuncie/
+cd anuncie/
+dir
+cd produot
+cd produtos/
+@v 
+@gv . 
+cd fixtures/
+ls
+more exemplo_anuncie.csv 
+ls
+cd ..
+ls
+more tests.py 
+@v tests.py 
+cd 
+cd sandbox/
+cd python/
+dir
+cd django1.4
+dir
+source env/bin/activate 
+dir
+@da startproject anucie
+rm -rf anu
+@da startproject anuncie
+cd anuncie/
+@da startapp audiencia
+ls
+cd audiencia/
+cd ..
+cd anuncie/
+dir
+@c settings.py 
+pip install tdaemon 
+ls
+@v settings.py 
+dir
+sudo apt-get less
+sudo apt-get lessc
+sudo apt-get install lessc
+lessc
+cd ..
+source env/bin/activate
+pip install django-less
+cd mysite/
+dir
+@pm runserver 
+open . 
+@pm runserver 
+@pm collectstatic
+@pm runserver 
+clear
+@pm runserver 
+open . 
+@pm runserver 
+@pm collectstatic 
+@pm runserver 
+@pm collectstatic 
+@pm runserver 
+@pm collectstatic
+@pm runserver
+dir
+lessc --help 
+dir
+lessc polls/static/less/styles.less polls/static/css/
+dir
+clear
+ping www.google.com2
+@pm runserver 
+clar
+clear
+@pm runserver
+exit
+dir 
+cd sadn
 cd sandbox/
 dir
+cd pu
+cd python/
+dur
 ls
-rm order_item1717.json 
-s
-ls
-@ fabfile.py
-@v fabfile.py
-fab deploy 
-dir
-ls
-mkdir deploying
-cd deploying/
-ls
+cd django
 cd ..
-rm deploying/
-rm -rf deploying/
-cllar
+cd django1.4/
+dir
+source env/bin/activate 
+cd mysite/
+@v 
+@v .
+clear
+dir
+@v .
+htop 
+git-cola
+pry
+@pm runserver 
+ping www.google.com
+clear
+dir
+rvm use p125
+rvvm gemset list 
+rvm gemset list 
+rvm gemset use huddle
+sass 
+sass --help 
+dir
+cd polls/
+cd static/
+dir
+sass --watch scss:css
+sass --help 
+sass -c --watch scss:css
+dir
+cd ..
+cd
+clear
+cd repositorios/git/Globo-Promocoes/promocoes/
+more __init__.py
+more tests/__init__.py
+more tests/models/test_fase.py
+more tests/models/test_categoria.py
+quit
+clear
+sudo apt-get install ack-grep 
+clear
+cd 
+cd sandbox/
+dir
+cd python/
+dir
+cd django1.4/
+ls
+cd mysite/
+dir
+cd mysite/
+dir
+cd ..
+cd polls/
+dir
+cd static/
+dir
+sass --watch scss:css
+openssl version 
+curl -I https://d2chzxaqi4y7f8.cloudfront.net/gems/rake-0.9.2.2.gem
+clear
+ls /etc/ssl/certs/
+clear
+rvm list 
+rvm gemset list 
+rvm use  ruby-1.9.3-p0 
+rvm gemset list 
+rvm migrate ruby-1.9.3-p0@mongo ruby-1.9.3-p194@mongo 
+rvm migrate ruby-1.9.3-p0@sinatra ruby-1.9.3-p194@sinatra
+rvm gemset list 
+rvm use ruby-1.9.3-p125
+rvm gemset list 
+rvm alias create p194 ruby-1.9.3-p194
+rvm alias create p125 ruby-1.9.3-p125
+rvm alias list 
+rvm use p0
+rvm use p194
+rvm gemset list 
+rvvm gemset --help 
+rvm gemset --help 
+rvm gemset delete teste
 clear
 exit
-python 
-iptyhon 
-ipython 
-raise Runtime('raise error')
-ipython 
+exit 
+sudo apt-get install openssl
+openssl s_client -connect info.vsu.ru:443 -CApath /etc/ssl/certs
+rvm install ruby-1.9.3-p194
+rvm remover 1.9.3-p194
+rvm remove 1.9.3-p194
+rvm pkg install openssl 
+rvm install 1.9.3-p194 --with-openssl-dir=$rvm_path/usr
+rvm install ruby-1.9.3-p194 --with-openssl-dir=$rvm_path/usr
+rm -rf /home/marcus/.rvm/archives/ruby-1.9.3-p194.tar.bz2 
+rvm install ruby-1.9.3-p194 --with-openssl-dir=$rvm_path/usr
+rmdir $rvm_path/usr/ssl/certs
+ln -s /etc/ssl/certs $rvm_path/usr/ssl
+rvm use 1.9.3-p194
+rvm gemset create teste
+rvm use 1.9.3-p194@teste
+cd sandbox/ruby/
+dir
+gem install rails --no-ri --no-rdoc
+r n teste 
+r new test
+r new nova_app
+sudo apt-get install sqlite3-dev
+sudo apt-get install sqlite3
+r new nova_app
+sudo aptitude search sqlite
+sudo aptitude install  libsqlite3-dev
+r new nova_app
+dir
+rm -rf nova_app
+dir
+cd rails/
+dir
+cd showtime/
+ls
+bundle install 
+sudo apt-get install libxml2 libxml2-dev
+sudo apt-get install imagemagick 
+bundle install 
+sudo apt-get install libxslt1.1 libxslt1-dev 
+bundle install 
+@v Gemfile
+bundle install 
+rvm use p0 
+rvm gemset create showtime 
+bundle install 
+rvm gemset list 
+rvm gemset use global 
+gem install rb-readline pry 
+pry 
+clear
+dir
+cd log/
+dir
+more development.log 
+claer
+dir
+cd ..
+rake cucumber 
+rvm gemset use showtime 
+rake cucumber 
+bundle install 
+rake cucumber 
+@v features/step_definitions/movie_steps.rb 
+rake cucumber
+clear
+cd ..
+clear
+dir
+gcc -v
+gcc 
+cd ..
+cd c 
+dir
+@v ex1.c 
+dir
+cd ..
+ls
+cd jquery/
+dir
+cd ..
+clear
+cd ruby/rails/showtime/
+clear
+apt-get install gparted
+sudo apt-get install gparted
+sudo gparted
+dir
+cd ..
+sudo poweroff
+sudo gparted
+alias
+exit
+sudo more /etc/sudoers
+sudo vim /etc/sudoers
+sudo apt-get install samba4-clients 
+exit
+aptitude
+vim /etc/hosts
+clear
+dir
+cd workspace/
+dir
+cd ..
+ls
+l
+cd .local
+dir
+cd share/
+dir
+cd ..
+clear
+exit
+@pm runserver 
+cd ..
+@pm runserver 
+cd repositorios/
+dir
+cd ..
+dir
+clear
+dir
+cd sandbox/python/django1.4/
+dir
+source env/bin/activate
+cd mysite/
+dir
+cd polls/
+dir
+@v admin.py
+clear
+cd ..
+clear
+exit
+@pm runserver 
+cd ..
+@pm runserver 
+source env/bin/activate  
+cd ..
+source env/bin/activate  
+cd mysite/
+@pm runserver 
+ps -aux | grep python
+kill -9 3509
+@pm runserver 
+kill -9 3510
+@pm runserver 
+clear
+exit
+dir
+cd sandbox/
+dir
+cd c 
+dir
+@v ex2.c
+gcc ex2.c -oex2
+gcc ex2.c -oex2 -W
+@v ex2.c
+gcc ex2.c -oex2 -W
+rm ex2.c
+dir
+rm ex2 
+dir
+cd ..
+clear
+dir
+cd ..
+exit
+node 
+clear
+exit
+apt-get install facter 
+sudo apt-get install facter 
+facter
+ls
+exit
+dir
+cd repositorios/git/Globo-Promocoes/
+dir
+cd puppet/
+dir
+cd modules/
+ls
+cd promocaoisp/
+dir
+more version.txt 
+@v 
+cd ..
+ls
+cd ..
+ls
+cd roles/
+ls
+more role_promocaoisp_be.pp 
+cd ..
+s
+ls
+cd git_hooks/
+dir
+more post-commit 
+dir
+more pre-commit 
+ls
+more README.txt 
+cd ..
+ls
+cd git_hooks/
+dir
+more update 
+clear
+cd ..
+exit
+facter | grep 'fqdn'
+facter 
+ssh
+ssh 
+ssh
+clear
+exit
+htop 
+clear
+dir
+rvm list 
+rvm use p194
+rvm gemset list 
+rvm gemset create 
+rvm gemset create puppet 
+gem install puppetmaster puppet 
+clear
+sudo aptitude search ruby 
+sudo aptitude search puppet 
+sudo aptitude install vim-puppet 
+sudo apt-get instal puppetmaster puppet 
+sudo apt-get install puppetmaster puppet 
+ruby 
+ruby 0v
+ruby -v
+rvm system
+ruby -v
+puppet 
+puppet help 
+puppet status
+puppet help status
+clear
+cd Downloads/
+ls
+chmod +x VMware-Player-4.0.3-703057.x86_64.bundle 
+sudo ./VMware-Player-4.0.3-703057.x86_64.bundle 
+sudo reboot 
+cd ..
+source env/bin/activate
+dir
+clear
+@pm shell 
+@pm shell --settings=settings_dev
+deactivate 
+ls
+cd 
+exit
+cd 
+cd/var
+cd /var
+cd char
+ca cache
+dir
+cd cache/
+dir
+cd apt
+dir
+cd archives/
+dir
+rm oracle-java7-installer_7u4-0~webupd8~0_all.deb 
+ls
+sudo rm oracle-java7-installer_7u4-0~webupd8~0_all.deb 
+ls
+cd partial/
+ls
+ll
+ls -a
+cd ..
+more lock 
+sudo more lock 
+sudo rm lock 
+clear
+cd ..
+cd 
+cd /var/lib/dpkg/
+ls info/
+sudo su 
+exit
+cd ..
+source env/bin/activate env
+@pm shell --settings=settings_de
+@pm shell --settings=settings_dev
+exit
+@v /tmp/vmware-root/modconfig-2435.log
+ls /tmp/vmware-root/
+sudo ls /tmp/vmware-root/m
+sudo vim /tmp/vmware-root/modconfig-2435.log
+vmware-installer 
+vmware-modconfig 
+vmware-uninstall 
+vmware-uninstall -l
+vmware-installer 
+vmware-installer -l 
+clear
+vmware-installer u vmware-player
+vmware-installer -u vmware-player
+sudo vmware-installer -u vmware-player
+clear
+cd /media/167b2fb8-e821-4a44-b024-4f791f7af8a4/
+cd ..
+cd 409be2ef-9dd0-441d-aa40-a353f37e290c/
+dir
+cd marcus/
+cd Downloads/
+dir
+cd ..
+ls
+ls Donwload/
+sudo ./Donwload/VMware-Player-4.0.3-703057.x86_64.bundle 
+cd
+cd Downloads/
+dir
+cd vmware_patch/
+dir
+./patch-modules_3.2.0.sh 
+@v patch-modules_3.2.0.sh 
+./patch-modules_3.2.0.sh 
+sudo ./patch-modules_3.2.0.sh 
+cd ..
+clear
+sudo aptitude search openjdk
+sudo aptitude uninstall openjdk-7-jdk
+sudo aptitude remove openjdk-7-jdk
+sudo aptitude remove --help 
+sudo aptitude clean
+sudo apt-get install synaptic
+htop 
+clear
+sudo apt-get purge openjdk*
+sudo add-apt-repository ppa:eugenesan/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+sudo apt-get purge oracle-java7-installer
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
+sudo apt-get install oracle-java7-installer
+sudo apt-get clean 
+sudo apt-get install oracle-java7-installer
+sudo apt-get clean 
 clear
 java
-java -v
-java -version
-javac 
-sudo apt-get install openjdk-6-jdk
-ls
-@v teste.java
-javac teste.java 
-java teste
-ls
-rm *.db
-rm teste*
-ls
-more exemplo.json 
-rm exemplo.json 
-ls
-more test.log 
-rm test.log 
-ls
-cd bitchx/
-./Bitchx irc.freenode.br -n marcusalmeida
-./BitchX irc.freenode.br -n marcusalmeida
-./BitchX irc.freenode.br 6665 -n marcusalmeida
-./BitchX irc.freenode.net 6665 -n marcusalmeida
-exit
-sudo ifconfig
-irb
-exit
-ipython 
+sudo apt-get install oracle-java7-installer
+sudo apt-get remove oracle-java7-installer
 clear
-cd Downloads/
-ls
-cd ..
-ls
-cd Música
-ls
-cd Diana\ Krall\ -\ The\ Very\ Best\ of\ Diana\ Krall\ \[Jazz\]\[mp3\ 192-320\]\[h33t\]\[schon55\]/
-ls
-cd ..
+sudo apt-get purge oracle-java7-installer
+sudo remove-apt-repository ppa:webupd8team/java
+sudo vim /etc/apt/sources.list
+sudo vim /etc/apt/sources.list.d
+sudo vim /etc/apt/sources.list.d/
+sudo apt-get update 
 clear
-exir
-exit
+ls
+tar xfvz jre-7u4-linux-x64.tar.gz 
+cd jre1.7.0_04/
 dir
-ls
-cd test/
-dir
-mv calculator.py ../
-ls
-rm calculator.pyc 
-touch __init__.py
-@v test_calculator.py
-cd ../../project/
-@v test 
-ls
-cd mysite/
-ls
-cd tests/
-dir
-ls
-@ct 
+more README 
 cd ..
-ciear
-cd ..c
-clear
-cd ..
-cd 
-clear
-cd sandbox/project/tdd
-cd sandbox/tdd/
-touch calculator.py
-clear
-cd ..
-clear
-exit
-@v .bash_aliases 
-source .bashrc
-@p
-ls
-cd Pdf
-cd PDF/
+rm -rf jre1.7.0_04/
+tar zxfv jdk-7u4-linux-x64.tar.gz 
+cd jdk1.7.0_04/
 dir
-ls
-cd ..
-cd sandbox/
-dir
-ls
-cd tdd/
-@ct
-ls
-cd test/
+cd bin
 dir
 cd ..
-@ct
-cd ..
 dir
-ls
-cd project/
-ls
-@ct 
+env
+env | grep JAVA
+env | grep JRE
 cd ..
-cd tdd
+rm -rf jdk1.7.0_04/
+cp jdk-7u4-linux-x64.tar.gz /usr/local/java/
+mkdir /usr/local/java/
+sudo mkdir /usr/local/java/
+cp jdk-7u4-linux-x64.tar.gz /usr/local/java/
+sudo cp jdk-7u4-linux-x64.tar.gz /usr/local/java/
+cd /usr/local/java/
 dir
-@ct 
-clear
-cd ..
-t
-exit
-sudo apt-get install cairo-dock cairo-dock-plug-ins
-cairo-dock
-exit
-cd /opt/TweetDeck/
-ls
-cd share/
-ls
-cd icons/
-ls
-exit
-clear
-cd bitchx/
-./BitchX irc.freenode.net -n red5
-exit
+tar xzfv jdk-7u4-linux-x64.tar.gz 
+sudo tar zxfv jdk-7u4-linux-x64.tar.gz 
 dir
-cd bitchx/
-./BitchX irc.freenode.net -n red5 
-clear
-exit
-irb
-exit
-sudo apt-get install python-tk idle python-pmw python-imaging
-exit
-python 
-cd sandbox/
-@v tkinter_example.py 
-@p tkinter_example.py 
-@v tkinter_example.py 
-@p tkinter_example.py 
-clear
-exit
-@v 
-claer
-exit
-iptyhon
-@ip
-sudo pip install lxml 
-sudo apt-get install python-lxml
-sudo pip install lxml 
-sudo pip install lxml --upgrade
-clar
-clear
-exit
-ipython
-exit
-ipython 
-clear
-exit
-cd repositories/git/
-git clone --depth 1 https://github.com/joyent/node.git
-cd node
-git checkout origin/v0.4
-git branch
-git checkout master
-export JOBS=2
-mkdir ~/local
-./configure --prefix=$HOME/local/node
-make 
-make install 
-echo 'export PATH=$HOME/local/node/bin:$PATH' >> ~/.bash_profile
-source ~/.profile
-curl http://npmjs.org/install.sh | sh 
-node
-@v ~/.bash_profile 
-cd ~/local/node/bin/
-ls
-node
-./node
-cd -
-more /etc/profile
-export PATH=\$HOME/local/node/bin:$PATH
-node
-rm -rf ~/local/
-ls
-env 
-env[PATH]
-env | ack-grep PATH
-mkdir ~/local
-./configure --prefix=$HOME/local/node
-make & make install 
-source ~/.bash_profile 
-make install 
-source ~/.bash_profile 
-node
-lcear
-clear
-curl http://npmjs.org/install.sh | sh  
-npm install express
-node 
-noe
-node
+sudo rm jdk-7u4-linux-x64.tar.gz 
 cd
-echo 'console.log("hello world!");' >> helloworld.js
-node helloworld.js 
-node 
-exit 
-cd bitchx/
-./BitchX irc.freenode.net -n marcusalmeida
+ls
+sudo vim /etc/bash.bashrc 
+export JAVA_HOME=/usr/local/java/jdk1.7.0_04/
+export JRE_HOME=/usr/local/java/jdk1.7.0_04/jre/
+export PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin
+java
+javac
+jre
+sudo vim /etc/profile
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/jdk1.7.0/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/lib/jvm/jdk1.7.0/bin/javac" 1 
+sudo update-alternatives --install "/usr/bin/java" "java" "/usr/local/java/jdk1.7.0_04/bin/java" 1
+sudo update-alternatives --install "/usr/bin/javac" "javac" "/usr/local/java/jdk1.7.0_04/bin/javac" 1 
+sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/lib/jvm/jdk1.7.0/bin/javaws" 1
+sudo update-alternatives --install "/usr/bin/javaws" "javaws" "/usr/local/java/jdk1.7.0_04/bin/javaws" 1
+mkdir ~/.mozilla/plugins/
+ln -s /usr/local/java/jdk1.7.0_04/jre/lib/amd64/libnpjp2.so ~/.mozilla/plugins/
 clear
-exit
+htop
+clear
+dir
+more .s3cfg
+clear
+sudo aptitude search build-essentials
+sudo aptitude search build-essential
+clear
+dir
 cd sandbox/
 dir
+mkdir puppet
+cd puppet/
+mkdir modules
+git clone git://github.com/uggedal/puppet-module-webapp.git modules/webapp
+git clone git://github.com/uggedal/puppet-module-python.git modules/python
+git clone git://github.com/uggedal/puppet-module-monit.git modules/monit
+git clone git://github.com/uggedal/puppet-module-nginx.git modules/nginx
 ls
-translate 
-translate pt-br en
-clear
-man sed
-clear
-cd repositories/git/
+cd mode
+cd modules/
+ls
+cd python/
 dir
-cd ..
-ls
-cd sandbox/
-dir
-ls
-ipython 
-exit
-cd Envs/
-cd OAS/
-dir
-cd oas-reporting/
-dir
-ls
-cd media/
-ls
-cd js/
-dir
-cd..
-cd ..
-@v settings.py
-exit
-cd 
-cd Envs/
-dir
-cd OAS/
-dir
-cd oas-reporting/
-ack-grep 'pdb' *.py
-ack-grep 'pdb' ./**/*.py
-ack-grep 'pudb' ./**/*.py
-@v reports/views.py
-quit
-exit
-cd /usr/local/lib/python2.7/site-packages/
-ls
-cd ..
-cd dist-packages/
-ls
-cd pudb
-ls
-cd ..
-ls
-cd pudb-2011.1.egg-info/
-ls
-cd ..
-ls
-cd pudb
-ls
-ack-grep 'signal_init' *.py
-ack-grep 'signal_restore' *.py
-cd
-easy_install pudb
-sudo easy_install pudb
-quit
-exit
-cd /usr/local/lib/python2.7/
-ls
-cd dist-packages/
-ls
-cd pudb-2011.1.egg-info/
-ls
-@v .
-cd ..
-cd pudb
-@v .
-exit
-cd Envs/OAS/oas-reporting/
-ls
 cd templates/
 ls
-cd reports/
-ls
-@v results.html
-translate en pt-BR
-ls
-dr
-c ..
-cd ..
-@v settings.py
-cd 
-cd bitchx/
-./BitchX irc.freenode.net -n red5
-exit
-@v .ipython/ipy_user_conf.py
-exit
-cd /usr/local/lib/python2.7/dist-packages/
-ls
-cd virtualenvwrapper
-ls
+more gunicorn.deb.init.erb 
+dir
 cd ..
 ls
-cd ..
-cd .
-cd ..
-cd /lib
+cd manifests/
+dir
+more dev.pp 
 ls
-whereis urwid
+cd venv/
+ls
+more isolate.pp 
+cd ..
+dir
+cd pip 
+dir
+@v install.pp 
+cd ..
+cd gunicorn/
+ls
+@v instance.pp 
 cd ..
 ls
-exit
-ps aux | ack-grep bashee
-ps aux
-kill -9 2594
-ps
-ps aux
-exit
-ps aux | ack-grep banshee
-ps aux | ack-grep 'banshee'
-pa aux
-psa
-ps aux
-exit
-ipython 
+cd webapp/
+dir
+cd manifests/
+@v 
+cd ..
+ls
+cd ..
+ls
+@v monit/
+cd ..
 clear
-quit
+cd ..
+dir
+cd ..
+dir
+cd repositorios/
+cd git
+cd Anuncie/
+git pull 
+clear
+cd anuncie/
+@v .
+cd 
+clear
+cd repositorios/git/Globo-Promocoes/
+git pull 
+git log 
+clear
+ls
+cd promocoes/
+dir
+@v views.py
+git status
+git checkout views.py
+git status 
+clear
+cd
+cd repositorios/
+cd git
+cd Anuncie/
+dir
+@wo env
+sudo pip virtualenvwrapper
+sudo pip install virtualenvwrapper
+l
+ls
+chmod +x globocore_setup_offsite.sh 
+./globocore_setup_offsite.sh 
+more ./globocore_setup_offsite.sh 
+ls
+virtualenvwrapper.sh 
+ls
+cd Envs
+dir
+ls
+~/Envs/
+cd ~/Envs/
+ls
+virtualenvwrapper.sh create
+source virtualenvwrapper.sh 
+virtualenvwrapper env
+export WORKON_HOME=~/Envs
+mkvirtualenv env
+cd ..
+dir
+cd repositorios/git/anu
+cd repositorios/git/Anuncie/
+dir
+more dependencias.ini 
+@pm runserver 
+cd anuncie/
+@pm runserver 
+clear
+@pm runserver 
+pip install python-Mysqldb
+@v local_settings.py.example 
+@pm runserver 
+pip install Mysql-python
+pip install Mysql-python --upgrade
+@pm runserver 
+pip uninstall Mysql-python --upgrade
+pip uninstall Mysql-python
+pip install Mysql-python 
+mysql -u root 
+cllear
+mysqlcheck 
+export PATH="$PATH:/usr/local/mysql/bin/"
+pip install Mysql-python 
+source ~/Envs/env/bin/activate
+pip install Mysql-python 
+export PATH="$PATH:/usr/mysql/"
+pip install Mysql-python 
+mysql_client_test 
+mysqlcheck
+pip install Mysql-python 
+env
+export PATH="$PATH:/etc/mysql/"
+pip install Mysql-python 
+source ~/Envs/env/bin/activate
+pip install Mysql-python 
+sudo pip install Mysql-python 
+cd
+sudo apt-get install libcurl4-openssl-dev 
+sudo apt-get install libcurl3
+sudo apt-get install mysql mysql-client-5.5 
+sudo apt-get install mysql-server-5.5 mysql-client-5.5 
+cd ~/Envs/env/local/lib/python2.7/site-packages/
+ls
+ls *.so
+rm _mysql.so
+ls
+ls /etc/mysql/my.cnf 
+more /etc/mysql/my.cnf 
+cd 
+cd Envs//env/build/Mysql-python/
+ls
+@v site.cfg 
+sudo apt-get install libmysqlclient18 
+@v site.cfg 
+ls /etc/mysql/my.cnf
+more /etc/mysql/my.cnf
+clear
+sudo apt-get install python-mysqldb
+@v site.cfg 
 exit
-dir
-sudo pip install nose 
-sudo pip install nose --upgrade 
-cd sandbox/
-ls
-cd por
-cd tdd
-dir
-ls
-nosetests test
-cd ..
-dir
-ls
-cd project/ls
-ls
-cd project/
-ls
-cd mysite/
-ls
-nosetests tests
-nosetests --help
-nosetests -v tests
-cd ..
-nosetests -v mysite.tests
-cd mysite/
-ls
-cd tests/
-cd ..
-cd tdd/
-dir
-ls
-cd test/
-dir
-more test_calculator.py
-less test_calculator.py
-nose test_calculator.py
-nosetests test_calculator.py
-nosetests test_calculator.py:test_subtraction
-nosetests test_calculator.py:test_sum
-@ct 
-exit
+mysql -u root  -d anunciedb
+mysql -u root  anunciedb
 cd Downloads/
-java -jar hudson.war 
-dir
-clear
-cd 
-cd .hudson/
-ls
-cd jboq
-cd jbos
-cd jobs/
 dir
 cd ..
-cd plugins/
-ls
-cd ..
-cd war/
-dir
-cd ..
-rm -rf .hudson/
-dir
-ls
-more helloworld.js 
-node helloworld.js 
-node
-cd local/
-dir
-cd node/
-ls
-source .bashrc
-cd 
-source .bashrc
-node
-~/local/node/bin/node helloworld.js 
-clear
+cd Downloads/
+mysql -u root anunciedb < unique_product.sql
 exit
-dir
-ls
-cd  Público/
-ls
-dir
-cd vmware
-cd ..
-cd Vídeos
-dir
-cd ..
-dir
-ls
-cd local/
-dir
-cd node/
-dir
-cd bin 
-dir
-node
-cd ..
-clear
-python 
-cd 
-@ip
-dir
-clear
-dir
-ls
-clear
-exit
-@v  .bash_aliases 
-exit
-ipython 
-translate pt-BR en 
-@ip 
-translate pt-BR en
-@ip 
-clear
-exit
-cd repositories/git 
-git clone https://github.com/gfxmonk/rednose.git
-cd rednose/
-ls
-more sample_test.py 
-dir
-more rednose.xml
-ls
-more rednose.py
-cd ..
-git clone https://github.com/brunobord/tdaemon.git
-cd tdaemon/
-dir
-@v tdaemon.py 
-exit
-python
-clear
-exit
-@v .themes/Murrine\ Applecore\ Square/gtk-2.0/gtkrc 
-exit
-sudo 
-sudo  dhclient
-dhclient
-exit
+echo 3 > /proc/sys/vm/drop_caches 
+sudo echo 3 > /proc/sys/vm/drop_caches 
 sudo su 
-exit 
-ps aux | ack-grep 'tdaemon'
-ps aux | ack-grep 'python'
+gedit ./Downloads/unique_product.sql
+mysql -u root anunciedb < unique_product.sql
+mysql -u root anunciedb < ./Downloads/unique_product.sql
+gedit ./Downloads/unique_product.sql
+cd Downloads/
+mysql -u root anunciedb < unique_product.sql
+fg 1
+mysql -u root anunciedb < unique_product.sql
+fg 1 
+echo 3 > /proc/sys/vm/drop_caches 
+sudo echo 3 > /proc/sys/vm/drop_cacheDs 
+sudo su 
 exit
-cd bitchx/
-./Bitchx irc.freenode.net 6665 -n red5
-./BitchX irc.freenode.net 6665 -n red5
-exit
-cd Ens
-cd Envs/
-mkvirtualenv ptc --no-site-package
-@wo ptc
-rmvirtualenv ptc
-@da ptc
-@de
+cd ..
+cd env/
+dir
+cd bin/
+dir
+cd ..
+l
+ll
+cd local
+dir
+cd ..
+ls
+cd ..
+ls
+rm -rf env
+virtualenv env --no-site-packages
+source env/bin/activate
+pip install -r configs/requirements/requirements.pip 
+sudo aptitude search imagick
+sudo aptitude search imageMagick
+sudo aptitude search libjpeg
+sudo aptitude install libjpeg62   libjpeg62-dev   
+sudo apt-get purge oracle-java7-installer
+sudo apt-get remove -F oracle-java7-installer
+sudo apt-get remove -f oracle-java7-installer
+sudo apt-get purge -F oracle-java7-installer
+sudo apt-get purge -f oracle-java7-installer
+sudo apt-get remove --purge  -f oracle-java7-installer
+sudo aptitude install libjpeg62   libjpeg62-dev   
+sudo apt-get remove --purge  -f oracle-java7-installer
+sudo aptitude install libjpeg62   libjpeg62-dev   
+sudo aptitude install libpng12-0 libpng12-dev 
+@pm shell --settings=settings_dev 
+clear
+git status 
+git add promocoes/views.py
+git commit -m 'Alterando critério de ordenação na lista de categorias'
+git push 
+clear
+@pm runserver --settings=settings_fake &
+@pm runserver --settings=settings_dev 
+fg 1
+@pm runserver --settings=settings_fake 9000 &
+@pm runserver --settings=settings_dev 
+@pm createsuperuser --settings=settings_dev
+@pm runserver --settings=settings_dev 
+cd
+fg 1
 deactivate 
-rmvirtualenv 
-rmvirtualenv ptc
+clear
+:qa
+clear
+cd /media/409be2ef-9dd0-441d-aa40-a353f37e290c/marcus/Público
+dir
+sudo tar xzfv env.tar.gz 
+ls
+cd env/
+dir
+cd lib/
+dir
+cd python2.6/
+dir
+cd site-packages/
+dir
+open . &
+cd
+dir
+cd ..
+cd 
+cd /media/
+ls
+cd 167b2fb8-e821-4a44-b024-4f791f7af8a4/
+ls
+cd ..
+cd 409be2ef-9dd0-441d-aa40-a353f37e290c/
+dir
+cd marcus/
+dir
+cd Público/
+ls
+sudo tar xzf anuncie_deps.tar.gz 
+tar xzf anuncie_deps.tar.gz 
+sudo tar xzf anuncie_deps.tar.gz 
+ls
+cd anuncie_deps/
+dir
+cd barramento/
+make start 
+make setup 
+make start 
+cd ../
+dir
+cd busca-nova-plataforma/
+ls
+make start 
+cd ..
+ls
+cd ..
+cd
+source ~/Envs/env/bin/activate
+pip install thumbor --upgrade 
+cd repositorios/git/Anuncie/
+cd anuncie/
+thumbor --hlep
+thumbor --help
+@v /home/marcus/Envs/env/local/lib/python2.7/site-packages/setuptools-0.6c11-py2.6.egg/pkg_resources.py
+sudo vim /home/marcus/Envs/env/local/lib/python2.7/site-packages/setuptools-0.6c11-py2.6.egg/pkg_resources.py
+thumbor --help
+pip install pyCrypto
+pip install pyCrypto --upgrade 
+dir
+cd produtos/
+@v widget
+@v widgets.py
+dir
+htop 
+ls
+cd
+cd Envs/
+dir
+cd 
+cd repositorios/git/Anuncie/
+cd anuncie/
+dir
+cd ..
+ls
+more requirements_offsite.txt 
+mysql --u root 
+mysql -u root
+ls
+cd anuncie/
+ls
+cp local_settings.py.example local_settings.py
+@v local_settings.py
+thumbor --help 
+cd 
+cd /media/409be2ef-9dd0-441d-aa40-a353f37e290c/
+cd marcus/Público/
+ls
+cd anuncie_deps/
+dir
+cd busca-nova-plataforma/
+make status
+make restart
+make stop 
+make start
+workon env
+cd repositorios/git/Anuncie/anuncie/
+@pm shell 
+git pull 
+sudo su 
+ls
+cd 
+dir
+ls Utils/
+ls
+scala
+sudo aptitude search scala 
+python 
+@ip 
+exit
+@ip 
+clear
+workon env
+clear
+cd 
+exit
+cd 
+cd /media/409be2ef-9dd0-441d-aa40-a353f37e290c/marcus/Público/
+ls
+cd anuncie_deps/
+make stop 
+ls
+cd busca-nova-plataforma/
+make stop 
+cd ..
+cd barramento/
+make stop 
+clear
+exit
+puppet
+clear
+ping ubuntu-server
+clear
+sudo vim /etc/hosts
+ping ubuntu-puppet 
+ssh ubuntu-puppet 
+clear
+cd
+ifconfig
+clear
+sudo vi /etc/hosts
+ssh marcus@ubuntu-puppet
+ping ubuntu-puppet
+sudo vi /etc/hosts
+ping ubuntu-puppet
+ssh marcus@ubuntu-puppet
+clear
+ssh ubuntu-puppet 
+htop
+cd 
+scp /home/marcus/.ssh/id_rsa.pub marcus@ubuntu:/home/marcus
+more /etc/hosts
+scp /home/marcus/.ssh/id_rsa.pub marcus@ubuntu-puppet:/home/marcus
+ssh ubuntu-puppet
+ls
+clear
+sudo reboot 
+ssh ubuntu-puppet 
+clear
+sudo su 
+exit
+ls
+zsh
+clear
+htop 
+dir
+sudo serices mysql stop 
+sudo services mysql stop 
+sudo service mysql stop 
+htop 
+~node
+node
+clear
+htop
+dir
+clear
+node
+clear
+htop 
+clear
+pry
+ciear
+cear
+clear
+cls
+clear
+xit
+exit
+dir
+cd sandbox/
+dir
+cd puppet/
+dir
+cd moduel
+cd modules/
+dir
+cd monit/
+dir
+cd ..
+dir
+cd python/
+dir
+@v . 
+@gv . 
+dir
+more README.md 
+sie
+la
+cd templates/
+dir
+more gunicorn.logrotate.erb 
+more gunicorn.deb.init.erb 
+dir
+cd ..
+ls
+cd ..
+dir
+cd python/
+dir
+more LICENSE 
+clear
+ls
+cd manifestdir
+ls
+cd mana
+cd manifests/
+dir
+more init.pp 
+ls
+more venv.pp
+sudo aptitude search python-virtual 
+ls venv
+more venv/isolate.pp 
+ls
+more dev.pp
+ll
+cd pip 
+dir
+more requirements.pp 
+ls
+more install.pp 
+ll
+dir
+cd ..
+ls
+cd pip 
 dir
 ls
+more install 
+more install.pp 
+easy_install distribute
+easy_install pip 
+sudo easy_install pip 
+sudo easy_install distribute
+easy_install
+pip 
+clear
+cd ..
+dir
+cd ..
+dir
+cd repositorios/git/
+dir
+mkdir puppet-python
+cd puppet-python/
+git init 
+mkdir manifests
+mkdir templates
+cd manifests/
+touch init.pp 
+cd ..
+dir
+git status 
+git add .
+git commit -m 'First commit'
+touch README.md
+git staut s
+git status 
+git add . 
+git commit -m 'Adding README'
+clear
+cd manifests/
+cd ..
+@gv . 
+dir
+cd ..
+mkdir python-pip 
+cd python-pip/
+cd ..
+rm -rf python-pip/
+mkdir puppet-python-pip
+cd puppet-python-pip
+mkdir manifests
+touch README.md
+mkdir templates
+cd templates/
+dir
+cd ..
+ls
+mkdir init.pp 
+rm -rf init.pp/
+touch init.pp 
+cd manifests/
+ls
+@v install.pp 
+cd ..
+clear
+ll
+cd manifests/
+dir
+@v install.pp
+cd ..
+dir
+clear
+htop
+sudo nano /etc/polkit-1/localauthority/50-local.d/com.ubuntu.desktop.pkla
+ls /etc/polkit-1/localauthority/50-local.d/
+
+ls /etc/polkit-1/localauthority/50-local.d/
+gksu gedit /etc/polkit-1/localauthority/50-local.d/com.ubuntu.enable-hibernate.pkla
 exit
-pip install rednose
+zsh
+wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+chsh -s /usr/bin/zsh
+exit
+zsh
+exit
+@v .zshrc
+zsh
+@v .zshrc
+zsh
+@v .zshrc
+zsh
+@v .zshrc
+zsh
+dir
+more .bashrc
+clear
+exit
+sudo wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+zsh
+cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+@v .zshrc
+zsh
+ls
+@v .zshrc
+zsh
+@v .zshrc
+zsh
+zsh 
+zsh
+@v .zshrc
+zsh
+@v .zshrc
+zsh 
+dir
+ll
+clear
+zsh
+exit
+@v .bashrc
+clear
+exit
+@v .zshrc
+zsh
+@v .zshrc
+zsh
+@v .zshrc
+zsh
+exit
+zsh
+clear
+zsh
+@v .oh-my-zsh/themes/maran.zsh-theme 
+zsh
+exit
+@v .bashrc
+exit
+:Wqa
+exit
+mv ~/Downloads/ajax-loader.gif ./
+exit
+ls *,jpg
+ls *.jpg
+ls *pg
+ls
+exit
+@ip
+exit
+cd sandbox/python/
+python job_schedule.py 
+t
+exit
+cd sandbox/python/
+python job_schedule.py 
+exit
+ls
+cd .virtualenvs/
+s
+ls
+cd ..
+clear
+exit
+terminator
+sudo apt-get install terminator
+exit
+puppet 
+vargrant
+clear
 sudo su 
+exit
+vim .zshrc
+vi .zshrc
+sudo su 
+reset 
+sudo reboot 
+zsh
+chsh -s /bin/zsh
+reset 
+zsh
+exit
+sudo apt-get install zsh 
+wget --no-check-certificate https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+chsh -s /bin/zsh
+exit
+zsh
+exit
+sudo su 
+exit
+df -h
+ls
+cd sandbox/
+dir
+cd
+sb
+sudo apt-get install google-chrome
+sudo apt-get install chrome
+chromiun
+clear
+vagrant
+clear
+more /etc/host
+more /etc/hosts
+clear
+node
+node -v
+rvm
+clear
+sudo apt-get install zsh git-core
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+mv .oh-my-zsh/ .oh-my-zsh-backup/
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+chsh -s `which zsh`
+sudo reboot
+vagrant status 
+cd ..
+rm -rf coreos-dev-env/
+ls
+cd
+ls
+cd sandbox/
+l
+clear
+exit
+docker ps -a
+docker inspect quimera_redis
+exit
+curl http://localhost:3000/reverse-me/ovo
+exit
+javac -verbose -d mods/br.com.caelum.jigsaw src/br.com.caelum.jigsaw/module-info.java src/br.com.caelum.jigsaw/br/com/caelum/jigsaw/JigSaw.java 
+java -module-path modes/ -m br.com.caelum.jigsaw.JigSaw
+java -version
+java -module-path mods/ -m br.com.caelum.jigsaw.JigSaw
+ls
+java -module-path mods/ -m br.com.caelum.jigsaw.JigSaw
+java --help
+java --module-path mods/ -m br.com.caelum.jigsaw.JigSaw
+clear
+javac -verbose -d mods/br.com.caelum.jigsaw src/br.com.caelum.jigsaw/module-info.java src/br.com.caelum.jigsaw/br/com/caelum/jigsaw/JigSaw.java 
+java --module-path mods/ -m br.com.caelum.jigsaw.JigSaw
+javac -verbose -d mods/br.com.caelum.jigsaw src/br.com.caelum.jigsaw/module-info.java src/br.com.caelum.jigsaw/br/com/caelum/jigsaw/JigSaw.java 
+javac -d mods/br.com.caelum.jigsaw src/br.com.caelum.jigsaw/module-info.java src/br.com.caelum.jigsaw/br/com/caelum/jigsaw/JigSaw.java 
+java --module-path mods/ -m br.com.caelum.jigsaw.JigSaw
+javac -d mods/br.com.caelum.jigsaw src/br.com.caelum.jigsaw/module-info.java src/br.com.caelum.jigsaw/br/com/caelum/jigsaw/JigSaw.java 
+javac -verbose -d mods/br.com.caelum.jigsaw src/br.com.caelum.jigsaw/module-info.java src/br.com.caelum.jigsaw/br/com/caelum/jigsaw/JigSaw.java 
+ls
+cd mods/br.com.caelum.jigsaw/br/com/caelum/jigsaw/
+cd mods/br.com.caelum.jigsaw/br/com/caelum
+cd mods/br.com.caelum.jigsaw
+clear
+ls
+cd ..
+ls
+cd ..
+ls
+java --module-path mods/ -m br.com.caelum.jigsaw.JigSaw
+java --module-path mods/ -m br.com.caelum.jigsaw/br.com.caelum.jigsaw.JigSaw
 exit

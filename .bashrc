@@ -2,6 +2,8 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+PS1='[\u@\h \W$(__docker_machine_ps1)]\$ '
+
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
@@ -87,9 +89,9 @@ alias l='ls -CF'
 # ~/.bash_aliases, instead of adding them here directly.
 # See /usr/share/doc/bash-doc/examples in the bash-doc package.
 
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+#if [ -f ~/.bashaliases ]; then
+#    . ~/.bash_aliases
+#fi
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
@@ -98,10 +100,32 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-if [ -f ~/.bash_exports ]; then
-    . ~/.bash_exports
-fi
+#if [ -f ~/.bash_aliases ]; then
+#   . ~/.bash_aliases
+#fi
 
- # rvm configuration                                                                                                        
- [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # Load RVM into a shell session *as a function*
+#if [ -f ~/.bash_exports ]; then
+#    . ~/.exports
+#fi
 
+#if [ -f ~/.path ]; then
+#  . ~/.path
+#fi
+
+# rvm configuration                                                                                                        
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+#source /usr/local/bin/virtualenvwrapper.sh
+
+[[ -s "/home/marcus/.gvm/scripts/gvm" ]] && source "/home/marcus/.gvm/scripts/gvm"
+
+export PATH=/home/marcus/.nvm/versions/node/v6.3.0/bin:/home/marcus/.gvm/bin:/home/marcus/.rvm/gems/ruby-2.2.3/bin:/home/marcus/.rvm/gems/ruby-2.2.3@global/bin:/home/marcus/.rvm/rubies/ruby-2.2.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/marcus/.rvm/bin:/usr/local/java/jdk1.8.0:/home/marcus/tools/adt-bundle-linux-x86_64-20131030//sdk/tools:/home/marcus/tools/adt-bundle-linux-x86_64-20131030//sdk/platform-tools:/home/marcus/tools/apache-ant-1.9.2/bin:/home/marcus/tools/scala-2.11.5/bin:/home/marcus/tools/apache-maven-3.3.9/bin:/home/marcus/.rvm/bin:/home/marcus/tools/go/bin:/home/marcus/forge/forge-distribution-3.4.0.Final/bin
+export FORGE_HOME=~/forge/forge-distribution-3.4.0.Final
+
+export PATH=/home/marcus/.nvm/versions/node/v6.3.0/bin:/home/marcus/.gvm/bin:/home/marcus/.rvm/gems/ruby-2.2.3/bin:/home/marcus/.rvm/gems/ruby-2.2.3@global/bin:/home/marcus/.rvm/rubies/ruby-2.2.3/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/marcus/.rvm/bin:/usr/local/java/jdk1.8.0:/home/marcus/tools/adt-bundle-linux-x86_64-20131030//sdk/tools:/home/marcus/tools/adt-bundle-linux-x86_64-20131030//sdk/platform-tools:/home/marcus/tools/apache-ant-1.9.2/bin:/home/marcus/tools/scala-2.11.5/bin:/home/marcus/tools/apache-maven-3.3.9/bin:/home/marcus/.rvm/bin:/home/marcus/tools/go/bin:/home/marcus/forge/forge-distribution-3.4.0.Final/bin
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/marcus/.sdkman"
+[[ -s "/home/marcus/.sdkman/bin/sdkman-init.sh" ]] && source "/home/marcus/.sdkman/bin/sdkman-init.sh"
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

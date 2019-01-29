@@ -1,5 +1,31 @@
-export WORKON_HOME="$HOME/Envs"
+#export SCALA_HOME="$HOME/tools/scala-2.11.5"
+#export PLAY_HOME="$HOME/tools/platform/play-1.2.3"
+export JAVA_HOME="/usr/local/java/jdk1.8.0"
+export MAVEN_HOME="$HOME/tools/apache-maven-3.3.9"
+export ANT_HOME="$HOME/tools/apache-ant-1.9.2"
+export ECLIPSE_HOME="$HOME/tools/eclipse"
+export WILDFLY_HOME="$HOME/tools/wildfly-10.1.0.Final"
+export FORGE_HOME="$HOME/tools/forge/forge-distribution-3.4.0.Final"
+#export GOHOME="/usr/local/go"
+export GOBINS="$HOME/go/bin:/usr/local/go/bin"
+#export GROOVY_HOME="$HOME/tools/groovy-2.4.7"
+#export GRADLE_HOME="$HOME/tools/gradle-3.2.1"
+#export TOMCAT_HOME="$HOME/tools/apache-tomcat-7.0.41"
+export MYSQL_CONF="/etc/mysq/my.cnf"
+export ADT_HOME="$HOME/tools/adt-bundle-linux-x86_64-20131030/"
+export ADT_SDK_TOOLS="$ADT_HOME/sdk/tools"
+export ADT_PLATFORM_TOOLS="$ADT_HOME/sdk/platform-tools"
+export ULTRA_RPEL="/usr/local/lib/node_modules/ultra-rpel"
+export RUBY_HOME="/home/marcus/.rvm/gems/ruby-2.2.3/"
+export PACKER_HOME="/home/marcus/tools/packer/"
+#export PATH=$PATH:$JAVA_HOME:$ECLIPSE:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$MYSQL_CONF
+export TFENV_HOME="/home/marcus/tools/tfenv"
+export EXERCISM_HOME="$HOME/tools/exercism"
+export PATH=$PATH:$RUBY_HOME/bin:$JAVA_HOME:$ANT_HOME/bin:$MAVEN_HOME/bin:$FORGE_HOME/bin:$GOBINS:$GOPATH/bin:$TFENV_HOME/bin:$PACKER_HOME:$EXERCISM_HOME
+#export PATH=$PATH:$GROOVY_HOME/bin
 
-if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-  source /usr/local/bin/virtualenvwrapper.sh
-fi
+#export WORKON_HOME="$HOME/Envs"
+
+#if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+#  source /usr/local/bin/virtualenvwrapper.sh
+#fi
