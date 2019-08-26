@@ -1,30 +1,78 @@
-[user]
-    name = Marcus Almeida
-    email = marcusmage@gmail.com
+[alias]
+  # View the SHA, description, and history graph of the latest 20 commits
+  l = log --pretty=oneline -n 20 --graph
+  ll = log --oneline --decorate --graph --all #-n 20
+  # View the current working tree status using the short format
+  s = status -s
+  # Show the diff between the latest commit the current state
+  d = !"git diff-index --quite HEAD -- || clear; git diff --patch-with-stat"
+  # `git di $number` shows the diff between the state `$number`revisions ago and the current state
+  di = !"d() { git diff --patch-with-stat HEAD-$!; }; git diff-index --quiet HEAD -- || clear; d"
+  # Pull in remote changes for the current repository and all its submodules
+  p = !"git pull; git submodule foreach git pull origin master"
+  # Clone a repository including all submodlues
+  c = clone --recursive
+  # commint all changes
+  ca = !git add -A && git commit -aV
+  # Switch to a branch, creating it if necessary
+  go = checkout -B
+  # show verbose output about tags, branches or remotes
+  tags = tag -l
+  branches = branch -a
+  remotes = remote -v
+  # Credit an author on the latest commit
+  credit = "!f() {git commit --amend --author \"$1 <$2>\" - C HEAD; }; f"
+  # Interactive rebase with the given number of latest commmits
+  reb = "!r() { git rebase -i HEAD-$1; }; r"
+  # Create a snapshot of your working directory
+  snapshot = "!snapshot(){ COMMENT=wip; if [ \"$*\" ]; then  COMMENT=\"$*\"; fi; git add -A; git commit -m \"$COMMENT\"; };snapshot"
+  # List remote branches
+  list-remote-branches= "!listRemoteBranches(){ git branch -r | sed \"/->/d; s/ origin\\///g\"; }; listRemoteBranches"
+  # Checkout remote branches
+  checkout-remote-branches = "!checkoutRemoteBranches() { for name in `git list-remote-branches`; do  git checkout $name;  done; }; checkoutRemoteBranches"
+  # Clone with branches
+  clone-with-branches = "!cloneWithBranches() { git clone $1 $2;  cd $2;  git checkout-remote-branches; git remote rm origin; }; cloneWithBranches"
+  # Unstage file
+  unstage = reset HEAD --
+	last = log -1 HEAD
 
-[color]
-    diff = auto
-    status = auto
-    branch = auto
-
-[push]
-    default = matching
+[apply]
+  # Detect whitespaces errors when applying a patch
+  whitespace = fix
 
 [core]
-    editor = vim
-    mergetool = meld
+  whitespace = space-before-tab,indent-with-non-tab,trailing-space
+
+[user]
+  name = Marcus Almeida
+  #email = marcusmage@gmail.com
+  #email = marcusmage@gmail.com
+	email = marcusmage@gmail.com
+[color]
+  diff = auto
+  status = auto
+  branch = auto
+
+[push]
+  default = matching
+
+[core]
+  editor = vim
+  mergetool = meld
 
 [color "branch"]
-    current = yellow reverse
-    local = yellow
-    remote = green
+  current = yellow reverse
+  local = yellow
+  remote = green
 
 [color "diff"]
-    meta = white bold
-    old = red bold
-    new = green bold
+  meta = white bold
+  old = red bold
+  new = green bold
 
 [color "status"]
-    added = green bold
-    changed = red bold
-    untracked = yellow bold
+  added = green bold
+  changed = red bold
+  untracked = yellow bold
+[merge]
+	tool = meld
