@@ -52,7 +52,7 @@ POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs histor
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(autopep8 aws battery celery django docker docker-machine docker-compose git git-flow grunt httpie kubectl minikube ng npm nvm pep8 pip postgres pylint python sudo supervisor systemd ubuntu vagrant zsh_reload tmux tmuxp web-search zsh-autosuggestions terraform)
+plugins=(autopep8 aws battery celery django docker docker-machine docker-compose git git-flow grunt httpie kubectl minikube ng npm nvm pep8 pip postgres pylint python sudo supervisor systemd ubuntu vagrant zsh_reload tmux web-search zsh-autosuggestions terraform)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -142,3 +142,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /home/marcus/.nvm/versions/node/v8.2.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /home/marcus/.nvm/versions/node/v8.2.1/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /home/marcus/.nvm/versions/node/v11.10.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /home/marcus/.nvm/versions/node/v11.10.1/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
